@@ -1,0 +1,84 @@
+#include <iostream>
+
+int main() {
+
+	//а задание
+	int result1{ 0 };
+	int a{ 2 };
+	int b{ 0 };
+	b = a * a;
+	result1 = b * b;
+	std::cout << result1 << std::endl;
+
+	//б задание 
+	int result2{ 0 };
+	a = 2;
+	b = 0;
+	b = a * a;
+	result2 = b * b;
+	result2 *= b;
+	std::cout << result2 << std::endl;
+
+	//с задание
+	int result3{ 0 };
+	a = 2;
+	b = 0;
+	b = a * a * a;
+	result3 = b * b * b * b * b;
+	std::cout << result3 << std::endl;
+
+	//2 задание 
+	int x;
+	std::cout << "x: ";
+	std::cin >> x;
+	int y;
+	std::cout << "y: ";
+	std::cin >> y;
+	int z;
+	std::cout << "Cubic gran: ";
+	std::cin >> z;
+
+	int result4 = (x * y) / (z * z);
+	std::cout << result4 << std::endl;
+
+	//3.1 задание
+	int a1, b1, c1;
+	std::cin >> a1;
+	std::cin >> b1;
+	std::cin >> c1;
+	if (a1 < b1 && b1 < c1) {
+		std::cout << "True" << std::endl;
+	}
+	else {
+		std::cout << "False" << std::endl;
+	}
+	//3.2 задание
+	int a2, b2, c2;
+	std::cin >> a2;
+	std::cin >> b2;
+	std::cin >> c2;
+	if (a2 > b2 && b2 > c2) {
+		std::cout << "True" << std::endl;
+	}
+	else {
+		std::cout << "False" << std::endl;
+	}
+	//задание 4
+	int num1, num2, num3;
+	std::cin >> num1;
+	std::cin >> num2;
+	std::cin >> num3;
+	if (num1 == num2 || num1 == num3 || num2 == num3) {
+		std::cout << "Odinakovoe" << std::endl;
+	}
+	else {
+		std::cout << " Ne Odinakovoe" << std::endl;
+	}
+	//5 задание
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 7; j++) {
+			std::cout << "*";
+		}
+		std::cout << std::endl;
+	}
+}
