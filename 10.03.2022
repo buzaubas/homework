@@ -1,0 +1,88 @@
+#include <iostream>
+#include <string>
+
+int cube(int a) {
+    return a * a * a;
+}
+
+void larger(int a, int b) {
+    if (a > b) {
+        std::cout << "Larger: " << a;
+    }
+    else {
+        std::cout << "Larger: " << b;
+    }
+}
+
+bool positive(int a) {
+    if (a >= 0) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+
+int add(int x, int y) {
+    return x + y;
+
+}
+
+int sub(int x, int y) {
+    return x - y;
+
+}
+
+int mul(int x, int y) {
+    return x * y;
+
+}
+
+int divi(int x, int y) {
+    return x / y;
+
+}
+
+int calculus(std::string ans, int a, int b) {
+    if (ans == "add") {
+        return add(a, b);
+    }
+    else if (ans == "sub") {
+        return sub(a, b);
+    }
+    else if (ans == "mul") {
+        return mul(a, b);
+    }
+    else if (ans == "divi") {
+        return divi(a, b);
+    }
+    else {
+        return 0;
+    }
+}
+
+void square(int n, int k) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < k; j++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+}
+
+int factorial(int a) {
+    int num{ 1 };
+    int ans{ 1 };
+    while (num != a) {
+        ans *= num;
+        num++;
+    }
+}
+
+int main()
+{
+    std::cout << calculus("add", 7, 5) << std::endl;
+    square(5, 4);
+    factorial(5);
+}
+
